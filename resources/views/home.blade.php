@@ -13,7 +13,13 @@
         <h1 class="text-center">I TRENIIIII</h1>
         <div>
             @php
-                dd($trains);
+                foreach ($trains as $train) {
+                    var_dump($train->getAttributes());
+                    echo '<br>';
+                    echo '<br>';
+                    echo '<br>';
+                    echo '<br>';
+                }
             @endphp
         </div>
     </div>
